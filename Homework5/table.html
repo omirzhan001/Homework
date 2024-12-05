@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://learn.javascript.ru/task/find-elements/table.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.rc-tooltip {
+    position: absolute;
+    z-index: 2147483647;
+    display: block;
+    visibility: visible;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 1;
+}
+
+.rc-tooltip-hidden {
+    display: none;
+}
+
+.rc-tooltip-placement-top, .rc-tooltip-placement-topLeft, .rc-tooltip-placement-topRight {
+    padding: 5px 0 9px 0;
+}
+
+.rc-tooltip-placement-right, .rc-tooltip-placement-rightTop, .rc-tooltip-placement-rightBottom {
+    padding: 0 5px 0 9px;
+}
+
+.rc-tooltip-placement-bottom, .rc-tooltip-placement-bottomLeft, .rc-tooltip-placement-bottomRight {
+    padding: 9px 0 5px 0;
+}
+
+.rc-tooltip-placement-left, .rc-tooltip-placement-leftTop, .rc-tooltip-placement-leftBottom {
+    padding: 0 9px 0 5px;
+}
+
+.rc-tooltip-inner {
+    user-select: none;
+    padding: 4px 6px;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    background-color: #373737;
+    border-radius: 6px;
+    box-shadow: 0 0 0 0;
+    min-height: 20px;
+}
+
+.rc-tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.rc-tooltip-placement-top .rc-tooltip-arrow,
+.rc-tooltip-placement-topLeft .rc-tooltip-arrow,
+.rc-tooltip-placement-topRight .rc-tooltip-arrow {
+    bottom: 4px;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #373737;
+}
+
+.rc-tooltip-placement-top .rc-tooltip-arrow {
+    left: 50%;
+}
+
+.rc-tooltip-placement-topLeft .rc-tooltip-arrow {
+    left: 15%;
+}
+
+.rc-tooltip-placement-topRight .rc-tooltip-arrow {
+    right: 15%;
+}
+
+.rc-tooltip-placement-right .rc-tooltip-arrow,
+.rc-tooltip-placement-rightTop .rc-tooltip-arrow,
+.rc-tooltip-placement-rightBottom .rc-tooltip-arrow {
+    left: 4px;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #373737;
+}
+
+.rc-tooltip-placement-right .rc-tooltip-arrow {
+    top: 50%;
+}
+
+.rc-tooltip-placement-rightTop .rc-tooltip-arrow {
+    top: 15%;
+    margin-top: 0;
+}
+
+.rc-tooltip-placement-rightBottom .rc-tooltip-arrow {
+    bottom: 15%;
+}
+
+.rc-tooltip-placement-left .rc-tooltip-arrow,
+.rc-tooltip-placement-leftTop .rc-tooltip-arrow,
+.rc-tooltip-placement-leftBottom .rc-tooltip-arrow {
+    right: 4px;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #373737;
+}
+
+.rc-tooltip-placement-left .rc-tooltip-arrow {
+    top: 50%;
+}
+
+.rc-tooltip-placement-leftTop .rc-tooltip-arrow {
+    top: 15%;
+    margin-top: 0;
+}
+
+.rc-tooltip-placement-leftBottom .rc-tooltip-arrow {
+    bottom: 15%;
+}
+
+.rc-tooltip-placement-bottom .rc-tooltip-arrow,
+.rc-tooltip-placement-bottomLeft .rc-tooltip-arrow,
+.rc-tooltip-placement-bottomRight .rc-tooltip-arrow {
+    top: 4px;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #373737;
+}
+
+.rc-tooltip-placement-bottom .rc-tooltip-arrow {
+    left: 50%;
+}
+
+.rc-tooltip-placement-bottomLeft .rc-tooltip-arrow {
+    left: 15%;
+}
+
+.rc-tooltip-placement-bottomRight .rc-tooltip-arrow {
+    right: 15%;
+}</style><style>@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);</style><style>@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap);</style><style>
+</style>
+<script src="script.js"></script>
+</head>
+
+<body>
+  <div id="landingElement" style="position: absolute; height: 350px; width: 380px; z-index: 2147483646; display: none; pointer-events: none; justify-content: center; align-items: start; flex-direction: row; gap: 8px;"><div id="DoubleSubsStyles"><div class="light" style="pointer-events: auto;"><button class="flex bg-none !rounded-[16px] justify-centre items-centre outline-none border-none opacity-90 transition-opacity duration-75 hover:opacity-100 p-0 pointer-events-auto cursor-pointer rounded p-0.5 select-none flex items-center"><svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[28px] h-[28px] "><rect width="28" height="28" rx="5" fill="#09B3B2"></rect><rect x="4.667" y="16.333" width="4.667" height="2.333" rx="1.167" fill="#F8F9FA"></rect><rect x="11.667" y="16.333" width="11.667" height="2.333" rx="1.167" fill="#F8F9FA"></rect><rect x="18.667" y="21" width="4.667" height="2.333" rx="1.167" fill="#F8F9FA"></rect><rect x="4.667" y="21" width="11.667" height="2.333" rx="1.167" fill="#F8F9FA"></rect></svg></button></div></div></div><form name="search">
+    <label>Search the site:
+      <input type="text" name="search">
+    </label>
+    <input type="submit" value="Search!">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Search the visitors:
+    <table id="age-table">
+      <tbody><tr>
+        <td>Age:</td>
+        <td id="age-list">
+          <label>
+            <input type="radio" name="age" value="young">less than 18</label>
+          <label>
+            <input type="radio" name="age" value="mature">18-50</label>
+          <label>
+            <input type="radio" name="age" value="senior">more than 50</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Additionally:</td>
+        <td>
+          <input type="text" name="info[0]">
+          <input type="text" name="info[1]">
+          <input type="text" name="info[2]">
+        </td>
+      </tr>
+
+    </tbody></table>
+
+    <input type="submit" value="Search!">
+  </form>
+
+
+<div></div></body></html>
