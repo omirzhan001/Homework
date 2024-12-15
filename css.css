@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* ВЕРХНЕЕ МЕНЮ */
+.buttongray {
+    border-radius: 100px;
+    background: rgba(8, 30, 52, 0.12);
+}
+
+.container {
+    margin: auto;
+    max-width: 1440px;
+}
+.container-top {
+    display: flex;
+    justify-content: space-between;
+}
+.top-line {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding: 1.7rem 0;
+}
+.logo {
+	display: flex;
+    align-items: center;
+    
+    justify-content: center;
+} 
+.logo img{
+	width: 25px;
+	height: auto;
+}
+.main-mnu {
+    display: flex;
+    margin-top: 15px;
+    font-size: 19px;
+    margin-right:16px ;
+}
+.main-mnu li {
+    list-style: none;
+}
+.main-mnu a {
+    color: #081E34;
+    padding: 16px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    font-weight: 200;
+    outline: none;
+}
+.main-mnu a:hover {
+    text-decoration: underline;
+}
+
+/* img первый блок */ 
+.img img{
+	width: 619px;
+	height: 420px;
+    border-radius: 32px;
+}
+.blok01 {
+    padding: 100px;
+}
+
+.text-blok01 {
+    width: 495px;
+	height: 366px;
+}

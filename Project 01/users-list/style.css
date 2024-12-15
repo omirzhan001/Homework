@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    background: #F1F1F1;
+}
+.blackHome {
+    font-weight: 700 !important;
+}
+/* ВЕРХНЕЕ МЕНЮ */
+.buttongray {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 100px;
+    background: rgba(8, 30, 52, 0.12);
+}
+.container {
+    margin: auto;
+    max-width: 1440px;
+}
+.container-top {
+    display: flex;
+    justify-content: space-between;
+}
+/* logo*/
+.logo {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+ol, ul {
+    padding-left: 0rem; 
+}
+.logo-div{
+    display: flex;
+    margin-left: 85px;
+}
+.logo img{
+	width: 25px;
+	height: auto;
+}
+
+/* logo*/
+.main-mnu {
+    display: flex;
+    margin-top: 15px;
+    font-size: 14px;
+    margin-right: 85px;
+    justify-content: center; /* Центровка по горизонтали */
+    align-items: center; /* Центровка по вертикали */
+}
+.main-mnu li {
+    list-style: none;
+}
+.main-mnu a {
+    color: #081E34;
+    padding: 16px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    font-weight: 200;
+    outline: none;
+    
+}
+/* .main-mnu a:hover {
+    text-decoration: underline;
+} */
+
+/* img первый блок */ 
+.img img{
+	width: 619px;
+	height: 420px;
+    border-radius: 32px;
+}
+.blok02{
+    padding: 100px;
+}
+
+.text-blok02{
+    width: 495px;
+	height: 366px;
+}
+.text-blok02 h1 {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Kanit', sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 118.519% */
+    margin-bottom: 35px;
+}
+ .text-blok02 p {
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 48px !important; /* Добавьте !important для тестирования */
+}
+.buttonF {
+    border-radius: 100px;
+    background: #712FFF;
+}
+.buttonF {
+    display: inline-block; /* Контейнер ограничен по содержимому */
+    border-radius: 100px;
+    background: #712FFF;
+}
+.buttonF a {
+    display: inline-flex; /* Ограничиваем ссылку по содержимому */
+    padding: 16px 24px; /* Отступы внутри кнопки */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 500; /* Толщина шрифта */
+}
+/* img первый блок 3.*/ 
+.blok03 {
+    display: flex;
+    height: 562px;
+    padding: 100px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+    align-self: stretch;
+    border-radius: 32px;
+    background: #E1DEE7;
+}
+.text-block3-1 h6 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* Caption 12 pt/Regular */
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+
+}
+.text-block3-1 h1 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Kanit', sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 103.704% */
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.col img {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    padding: 0px 14.873px 0px 14px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px !important;
+}
+.col h3 {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+col h6 {
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+}
+
+/* blok04 */
+.blok04 {
+    display: flex;
+    padding: 100px 80px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+ .text-blok04 {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 48px;
+} 
+.text-blok04 h1 {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Kanit', sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 118.519% */
+}
+.text-blok04 p {
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+} 
+
+.inputBlok {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 32px;
+}
+.inputblok1 {
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid #E1DEE7;
+    background: #FFF;
+    padding: 13px 75px 13px 13px;
+    align-items: flex-start;
+    gap: 12px;
+}
+.inputblok1 input {
+    width: 495px;
+    border: 2px solid white;
+
+}
+input:focus {
+    border-color: rgb(255, 255, 255); /* Чёрная граница при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+    color: rgb(0, 0, 0); /* Чёрный текст (если нужно) */
+}
+
+.button-icon {
+    margin-right: 8px; /* Отступ между картинкой и текстом */
+    width: 16px; /* Размер картинки (по желанию) */
+    height: auto; /* Пропорциональное изменение высоты */
+}
+.blok05 {
+    display: flex;
+    padding: 32px 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.textblok5  {
+  height: 250px;
+}
+.Madewith {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: stretch;
+    margin-right: 0px;
+}
+.blok05 {
+    display: flex;
+    border-radius: 32px;
+    background: #ffffff;
+}
+.Madewith01 {
+    margin-right: 0px;
+}
