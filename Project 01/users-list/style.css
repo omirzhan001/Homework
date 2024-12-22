@@ -278,3 +278,137 @@ input:focus {
 .Madewith01 {
     margin-right: 0px;
 }
+
+
+/*  */
+
+
+/* Стили для мобильной версии */
+@media (max-width: 800px) {
+    .main-mnu .noneMnu{
+        display: none;
+    }
+
+    .logo-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .logo-div .JumysTap01 {
+        display: inline-block;
+        margin-right: auto;
+    }
+
+    .logo-div .buttongray {
+        display: inline-block;
+        margin-left: auto;
+    }
+
+    .blok02 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blok02 .img {
+        order: -1;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .text-blok02 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text-blok02 h1 {
+        margin-bottom: 10px;
+    }
+
+    .buttonF {
+        margin-top: 20px;
+    }
+
+    .blok03 {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .blok03 .row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .blok03 .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+ /*    .container-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    } */
+
+    .logo-div {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .blok03 {
+        padding: 20px;
+    }
+
+    .col {
+        align-items: center;
+        text-align: center;
+    }
+
+    .blok04 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .inputblok1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .inputblok1 input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .inputBlok {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .blok05 {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Madewith {
+        align-items: center;
+    }
+}
